@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge || QRGenerator</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+
+    <main>
+        <div class="content-items">
+            <div class="qr-container">
+                <div class="text">
+                    <div class="tile">
+                        <h1>Convert your Link to QR code</h1>
+                    </div>
+                    <form id="form" class="generar-qr">
+                        <input placeholder="Enter or paste your URL" id="content" class="input" name="text" type="text" />
+                        <button class="button type1" id="btn" type="submit">
+                            <span class="btn-txt">Generate</span>
+                        </button>  
+                    </form>
+                    <p>Your QR code will be generated automatically, your generated QR code will open this URL.</p>
+                </div>
+            </div>
+            <div class="qr-show">
+                <div class="img-qr">
+                    <div id="imageQr" class="qrcode">
+
+                    </div>
+                </div>
+                <div class="download-qr">
+                    <a class="button type1" id="download" type="button" href="" download="QR.png">
+                        <span class="btn-txt">Download</span>
+                    </a>  
+            
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
